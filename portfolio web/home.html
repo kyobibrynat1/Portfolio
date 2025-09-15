@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Quinjie Benedict Capayan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <div class="brand"><h2>QB Capayan</h2></div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-layout">
+      <!-- Profile card (visually left due to swap) -->
+      <div class="hero-right">
+        <aside class="hero-pfp-card glass reveal" role="complementary" aria-label="Profile card">
+          <div class="hero-pfp-wrapper">
+            <img src="photos/pfp.png" alt="Quinjie Benedict Capayan" class="hero-pfp" />
+          </div>
+
+          <div class="hero-pfp-meta">
+            <p class="hero-name">Quinjie Benedict Capayan</p>
+
+            <!-- typed lines -->
+            <div class="typed-right" data-lines='["3rd Year BS in Computer Science"]'></div>
+
+            <div class="hero-badges" aria-hidden="true">
+              <span class="badge">Open to internship</span>
+              <span class="badge">Backend • Frontend</span>
+            </div>
+
+            <ul class="hero-stats">
+              <li><strong>4</strong><span>Projects</span></li>
+              <li><strong>0</strong><span>Internships</span></li>
+              <li><strong>24/7</strong><span>Learning</span></li>
+            </ul>
+
+            <div class="hero-ctas">
+              <button id="download-cv-hero" class="btn small">Download CV</button>
+              <a href="#contact" class="btn small ghost">Contact</a>
+            </div>
+
+            <p class="hero-socials" style="margin-top:8px;">
+              <a href="https://github.com/kyobibrynat1/" target="_blank" rel="noopener" class="btn github" aria-label="GitHub profile">GitHub</a>
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Main hero content (visually right) -->
+      <div class="hero-left">
+        <div class="hero-inner glass reveal">
+          <h1>Hi!, I am Quinjie Benedict Capayan</h1>
+          <h3>West Visayas State University</h3>
+
+          <p class="hero-type">I build <span class="typed-words" data-words='["Web apps","APIs","Algorithms","Tools"]'></span></p>
+
+          <p style="margin-top:12px; color:var(--muted);">
+            I'm a Computer Science student focusing on clean code, practical solutions and continuous learning.
+          </p>
+
+          <div style="margin-top:18px;">
+            <a href="#projects" class="btn">View My Work</a>
+            <!-- <a href="#contact" class="btn small ghost" style="margin-left:8px;">Contact</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <h2>About Me</h2>
+    <div class="content glass">
+      <div class="photo-group">
+        <img src="photos/pfp.png" alt="Profile" class="photo" />
+        <img src="photos/pc.jpg" alt="Extra Photo 3" class="photo" />
+        <img src="photos/streamlit.png" alt="Extra Photo 1" class="photo" />
+        <img src="photos/jobhorizon.png" alt="Extra Photo 3" class="photo" />
+        <img src="photos/bucari.png" alt="Extra Photo 3" class="photo" />
+        <img src="photos/wllr.jpg" alt="Extra Photo 3" class="photo" />
+        
+      </div>
+
+      <div class="text">
+        <p>
+          I focus on software design, algorithms, and practical projects. I enjoy building systems that solve problems and learning new tools along the way.
+        </p>
+
+        <p>
+          Recently I've been working with JavaScript, Python, and Java to build full-stack web applications and APIs. My projects include a PC specifications recommender system , WorkHorizon, BlogSplat , plus a music playlist sequencer and parking simulator.
+I enjoy turning ideas into clean, scalable code and collaborating with others on meaningful solutions. 
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <ul class="skills-grid">
+      <li class="glass"><span class="skill-icon"><img src="https://cdn.simpleicons.org/html5" alt="HTML5"></span>HTML &amp; CSS</li>
+      <li class="glass"><span class="skill-icon"><img src="https://cdn.simpleicons.org/javascript" alt="JS"></span>JavaScript</li>
+      <li class="glass"><span class="skill-icon"><img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java"></span>Java</li>
+      <li class="glass"><span class="skill-icon"><img src="https://cdn.simpleicons.org/python" alt="Python"></span>Python</li>
+      <li class="glass"><span class="skill-icon"><img src="https://cdn.simpleicons.org/cplusplus" alt="C++"></span>C++</li>
+      <li class="glass"><span class="skill-icon"><img src="https://cdn.simpleicons.org/mysql" alt="MySQL"></span>Databases</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project glass"><h3>Tech-Tailored Personal Computer Specifications Recommender System</h3><p>A web-based decision support tool that simplifies personal computer selection for non-technical users. The system uses rule-based filtering to match user budget and intended use (gaming, office work, content creation) with optimal PC configurations from a structured database.</p></article>
+      <article class="project glass"><h3>BlogSplat</h3><p>A modern job search and recruitment web platform that connects job seekers with employers. Features an intuitive search interface allowing users to find opportunities by job title, keywords, category, company, and location. The platform includes dual functionality for both job searching and job posting, with a clean, professional design optimized for user experience.</p></article>
+      <article class="project glass"><h3>JobHorizon</h3><p>A content management and blogging platform focused on travel destinations and lifestyle content. The system showcases rich multimedia content with integrated imagery and detailed destination guides. Featured content includes travel recommendations, accommodation listings, and local insights.</p></article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <div class="contact-list glass">
+      <p>Email: <a id="copy-email" href="mailto:capayan08@gmail.com" data-email="capayan08@gmail.com">capayan08@gmail.com</a></p>
+      <p>
+        <a href="https://www.facebook.com/kyob.espinosa/" target="_blank" rel="noopener">Facebook</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.instagram.com/_icekyob/" target="_blank" rel="noopener">Instagram</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Quinjie Benedict Capayan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // update nav height CSS var
+    function updateNavHeight() {
+      const nav = document.querySelector('.navbar');
+      if (!nav) return;
+      const h = Math.ceil(nav.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--nav-height', `${h}px`);
+    }
+    window.addEventListener('load', updateNavHeight);
+    window.addEventListener('resize', updateNavHeight);
+
+    // Navbar toggle
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        toggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => {
+          nav.classList.remove('active');
+          toggle.classList.remove('active');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Smooth scroll for internal anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href || href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 72;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset - 8;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // LEFT: looping typing effect for .typed-words
+    (function () {
+      const el = document.querySelector('.typed-words');
+      if (!el) return;
+      let words = [];
+      try { words = JSON.parse(el.getAttribute('data-words')); } catch (e) { words = ["Web apps","APIs","Algorithms","Tools"]; }
+      let i = 0, j = 0, deleting = false;
+      const typeSpeed = 80, deleteSpeed = 40, pause = 1200;
+      el.classList.add('typing-active');
+
+      function tick() {
+        const word = words[i % words.length];
+        if (!deleting) {
+          el.textContent = word.slice(0, ++j);
+          if (j === word.length) { deleting = true; setTimeout(tick, pause); return; }
+          setTimeout(tick, typeSpeed);
+        } else {
+          el.textContent = word.slice(0, --j);
+          if (j === 0) { deleting = false; i++; setTimeout(tick, 220); return; }
+          setTimeout(tick, deleteSpeed);
+        }
+      }
+      setTimeout(tick, 300);
+    })();
+
+    // RIGHT: sequential typing for .typed-right
+    (function () {
+      const container = document.querySelector('.typed-right');
+      if (!container) return;
+      let lines = [];
+      try { lines = JSON.parse(container.getAttribute('data-lines') || '[]'); } catch (e) { lines = []; }
+      if (!lines.length) return;
+      let idx = 0;
+
+      function typeLine(text, parent, cb) {
+        const lineEl = document.createElement('div');
+        lineEl.className = 'typed-line';
+        parent.appendChild(lineEl);
+
+        const caret = document.createElement('span');
+        caret.className = 'typed-caret';
+        parent.appendChild(caret);
+
+        let k = 0;
+        const speed = 40;
+        function step() {
+          lineEl.textContent = text.slice(0, k);
+          k++;
+          if (k <= text.length) {
+            setTimeout(step, speed);
+          } else {
+            setTimeout(() => { caret.remove(); cb && cb(); }, 350);
+          }
+        }
+        step();
+      }
+
+      function run() {
+        if (idx >= lines.length) return;
+        typeLine(lines[idx], container, () => { idx++; run(); });
+      }
+
+      setTimeout(run, 400);
+    })();
+
+    // Download CV
+    document.getElementById('download-cv-hero')?.addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.href = 'QB RESUME.pdf';
+      a.download = 'QB RESUME.pdf.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    });
+
+    // Copy email
+    document.getElementById('copy-email')?.addEventListener('click', function (e) {
+      e.preventDefault();
+      const email = e.currentTarget.dataset.email || e.currentTarget.textContent.trim();
+      navigator.clipboard?.writeText(email).then(() => {
+        const original = e.currentTarget.textContent;
+        e.currentTarget.textContent = 'Copied ✓';
+        setTimeout(() => e.currentTarget.textContent = original, 1500);
+      }).catch(() => { window.location.href = `mailto:${email}`; });
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll(".reveal");
+    function revealOnScroll() {
+      const triggerBottom = window.innerHeight * 0.85;
+      reveals.forEach((el) => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) el.classList.add("active");
+      });
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+</body>
+</html>
