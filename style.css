@@ -38,16 +38,7 @@ body{
   position: relative;
 }
 
-/* subtle texture so bg isn't flat */
-body::before{
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.025' /></svg>");
-  opacity: 1;
-  z-index: 0;
-}
+/* Texture generation now handled by background-effects.js */
 
 body > * { position: relative; z-index: 1; }
 
@@ -458,6 +449,70 @@ section#about .text p:first-child {
 /* Projects */
 .projects-grid{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:18px; }
 .project{ padding:14px; border-radius:10px; }
+
+/* Project language/tech badges */
+.project-badges{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 10px 0;
+}
+.tech-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(255,255,255,0.95);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+.tech-badge img{
+  width: 16px; height: 16px; object-fit: contain; display: block;
+}
+
+/* Project thumbnails */
+.project .project-thumb{
+  width: 100%;
+  aspect-ratio: 16 / 9; /* consistent thumbnail ratio */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.85);
+  box-shadow: 0 8px 22px rgba(16,24,40,0.08);
+  display: block;
+  margin-bottom: 12px;
+  background: #f3f4f6;
+  /* Glass-like default look */
+  filter: blur(1.2px) saturate(1.06) brightness(1.02);
+  transition: transform 200ms ease, filter 220ms ease;
+  transform-origin: center;
+}
+
+@media (max-width: 900px){
+  .project .project-thumb{ aspect-ratio: 16 / 9; height: auto; }
+}
+
+/* Project card hover effects */
+.project{
+  position: relative;
+  overflow: hidden; /* keep zoomed image within rounded corners */
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+/* On hover, return card and image to normal (no lift, no blur) */
+.project:hover,
+.project:focus-within{
+  transform: none;
+  box-shadow: inherit;
+}
+.project:hover .project-thumb,
+.project:focus-within .project-thumb{
+  transform: none;
+  filter: none; /* remove glass effect on hover */
+}
 
 /* Contact */
 .contact-list{ padding:20px; color:var(--muted); }
