@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="top"></div>
 
   <!-- Navigation Bar -->
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <div class="nav-container">
-      <div class="brand"><h2>QB Capayan</h2></div>
+  <div class="brand"><h2><a href="#top" class="brand-link" aria-label="Go to main page">QB Capayan</a></h2></div>
 
       <button class="menu-toggle" id="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
@@ -40,7 +41,7 @@
             <p class="hero-name">Quinjie Benedict Capayan</p>
 
             <!-- typed lines -->
-            <div class="typed-right" data-lines='["3rd Year BS in Computer Science"]'></div>
+            <div class="typed-right" data-lines='["3rd Year BS in Computer Science","West Visayas State University • CICT"]'></div>
 
             <div class="hero-badges" aria-hidden="true">
               <span class="badge">Open to internship</span>
@@ -48,7 +49,7 @@
             </div>
 
             <ul class="hero-stats">
-              <li><strong>4</strong><span>Projects</span></li>
+              <li><strong>6</strong><span>Projects</span></li>
               <li><strong>0</strong><span>Internships</span></li>
               <li><strong>24/7</strong><span>Learning</span></li>
             </ul>
@@ -61,6 +62,7 @@
             <p class="hero-socials" style="margin-top:8px;">
               <a href="https://github.com/kyobibrynat1/" target="_blank" rel="noopener" class="btn github" aria-label="GitHub profile">GitHub</a>
             </p>
+
           </div>
         </aside>
       </div>
@@ -68,18 +70,27 @@
       <!-- Main hero content (visually right) -->
       <div class="hero-left">
         <div class="hero-inner glass reveal">
-          <h1>Hi! I am Quinjie Benedict Capayan</h1>
-          <h3>West Visayas State University</h3>
+          <h1><span class="typed-once">Hi! I am Quinjie Benedict Capayan</span></h1>
+          
 
-          <p class="hero-type">I build <span class="typed-words" data-words='["Web apps","Mobile apps","Games","Systems"]'></span></p>
+          <p class="hero-type">I build  <span class="typed-words" data-words='["Web apps","Mobile apps","Games","Systems"]'></span></p>
 
           <p style="margin-top:12px; color:var(--muted);">
-            I'm a Computer Science student focusing on clean code, practical solutions and continuous learning.
+            I build software with a focus on simplicity and function. I'm a dedicated learner, currently exploring full-stack development and the art of creating solutions that help others.
           </p>
 
-          <div style="margin-top:18px;">
+          <div class="hero-cta-row">
             <a href="#projects" class="btn">View My Work</a>
-            <!-- <a href="#contact" class="btn small ghost" style="margin-left:8px;">Contact</a> -->
+            <a href="https://github.com/users/kyobibrynat1/contributions" target="_blank" rel="noopener" class="contrib-chip" aria-label="Open GitHub contributions">
+              <img
+                class="contrib-chip-img"
+                src="https://ghchart.rshah.org/0b1220/kyobibrynat1"
+                alt="GitHub contributions chart for kyobibrynat1"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+              <span id="contrib-count" class="contrib-count" aria-live="polite"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -133,14 +144,16 @@
         <h3>Tech-Tailored</h3>
         <p>Tech Tailored is a PC recommender system that helps users choose the best computer based on budget and purpose. Using rule-based filtering and a database of builds, it gives non-technical users tailored, easy-to-understand recommendations.</p>
         <div class="project-badges" aria-label="Technologies used">
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/html5" alt="HTML5" />HTML</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/css3" alt="CSS3" />CSS</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" />JavaScript</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/python" alt="Python" />Python</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/fastapi" alt="FastAPI" />FastAPI</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/streamlit" alt="Streamlit" />Streamlit</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/sqlite" alt="SQLite" />SQLite</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/mysql" alt="MySQL" />MySQL</span>
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">Streamlit</span>
+          <span class="tech-badge">SQLite</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-link" href="https://github.com/kyobibrynat1/tech-tailored" target="_blank" rel="noopener noreferrer" aria-label="View Tech-Tailored project on GitHub">View Project</a>
         </div>
       </article>
 
@@ -149,9 +162,12 @@
         <h3>BlogSplat</h3>
         <p>BlogSplat is a travel blog website featuring Bucari, Leon—known as the “Summer Capital of Iloilo.” It showcases destinations, places to stay, and travel tips through an engaging design with images, descriptions, and a comment section. The site also includes contact info and social links, making it both informative and interactive.</p>
         <div class="project-badges" aria-label="Technologies used">
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" />JavaScript</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/html5" alt="HTML5" />HTML</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/css3" alt="CSS3" />CSS</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-link" href="https://github.com/kyobibrynat1/blogsplat" target="_blank" rel="noopener noreferrer" aria-label="View BlogSplat project on GitHub">View Project</a>
         </div>
       </article>
 
@@ -160,12 +176,15 @@
         <h3>WorkHorizon</h3>
         <p>WORK-HORIZON is a full-stack web application designed to streamline the recruitment process. It provides a platform for employers to post jobs and manage candidates, while enabling job seekers to create profiles, search for opportunities, and track their applications.</p>
         <div class="project-badges" aria-label="Technologies used">
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/html5" alt="HTML5" />HTML</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/css3" alt="CSS3" />CSS</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" />JavaScript</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/bootstrap" alt="Bootstrap" />Bootstrap</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/php" alt="PHP" />PHP</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/mysql" alt="MySQL" />MySQL</span>
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Bootstrap</span>
+          <span class="tech-badge">PHP</span>
+          <span class="tech-badge">MySQL</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-link" href="https://github.com/kyobibrynat1/workhorizon" target="_blank" rel="noopener noreferrer" aria-label="View WorkHorizon project on GitHub">View Project</a>
         </div>
       </article>
 
@@ -174,8 +193,11 @@
         <h3>Brick-merica Smash</h3>
         <p>Brick-merica is a modern take on the classic Breakout game with AI-controlled agents and dynamic power-ups. The AI agent adds unpredictability by interacting with the ball, making gameplay more engaging and challenging.</p>
         <div class="project-badges" aria-label="Technologies used">
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/python" alt="Python" />Python</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/pygame" alt="Pygame" />Pygame</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">Pygame</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-link" href="https://github.com/kyobibrynat1/brickmerica-smash" target="_blank" rel="noopener noreferrer" aria-label="View Brick-merica Smash project on GitHub">View Project</a>
         </div>
       </article>
 
@@ -184,8 +206,11 @@
         <h3>Rentasakay</h3>
         <p>The Vehicle Rental System is a Java-based app that allows users to rent cars or bikes and calculates costs automatically. Vehicle owners can also list their vehicles for rent. It’s a simple, user-friendly prototype focusing on core rental functions.</p>
         <div class="project-badges" aria-label="Technologies used">
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/java" alt="Java" />Java</span>
+          <span class="tech-badge">Java</span>
           <span class="tech-badge">Swing</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-link" href="https://github.com/kyobibrynat1/rentasakay" target="_blank" rel="noopener noreferrer" aria-label="View Rentasakay project on GitHub">View Project</a>
         </div>
       </article>
 
@@ -194,8 +219,11 @@
         <h3>ASES</h3>
         <p>The Automated Semestral Evaluation System (ASES) is a platform that streamlines faculty evaluations in CICT. It lets students submit feedback online while providing faculty with timely, transparent results. The system reduces admin work and supports continuous teaching improvement.</p>
         <div class="project-badges" aria-label="Technologies used">
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/cplusplus" alt="C++" />C++</span>
-          <span class="tech-badge"><img src="https://cdn.simpleicons.org/qt" alt="Qt" />Qt</span>
+          <span class="tech-badge">C++</span>
+          <span class="tech-badge">Qt</span>
+        </div>
+        <div class="project-actions">
+          <a class="project-link" href="https://github.com/kyobibrynat1/ases" target="_blank" rel="noopener noreferrer" aria-label="View ASES project on GitHub">View Project</a>
         </div>
       </article>
     </div>
@@ -204,19 +232,69 @@
   <!-- Contact -->
   <section id="contact" class="reveal">
     <h2>Contact</h2>
-    <div class="contact-list glass">
-      <p>Email: <a id="copy-email" href="mailto:capayan08@gmail.com" data-email="capayan08@gmail.com">capayan08@gmail.com</a></p>
-      <p>
-        <a href="https://www.facebook.com/kyob.espinosa/" target="_blank" rel="noopener">Facebook</a>
-        &nbsp;|&nbsp;
-        <a href="https://www.instagram.com/_icekyob/" target="_blank" rel="noopener">Instagram</a>
-      </p>
+    <div class="contact-card glass">
+      <div class="contact-grid">
+        <!-- Left: quick links -->
+        <div class="contact-links">
+          <div class="contact-row">
+            <span class="contact-label"><span class="at-icon" aria-hidden="true">@</span><span class="sr-only">Email</span></span>
+            <div class="contact-value">
+              <a id="copy-email" href="mailto:capayan08@gmail.com" data-email="capayan08@gmail.com">capayan08@gmail.com</a>
+              <button type="button" id="copy-email-btn" class="copy-chip" aria-label="Copy email address">Copy</button>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label"><img class="contact-icon" src="https://cdn.simpleicons.org/github" alt="GitHub"></span>
+            <div class="contact-value">
+              <a class="contact-link" href="https://github.com/kyobibrynat1/" target="_blank" rel="noopener" aria-label="GitHub profile">
+                <span class="sr-only">GitHub</span>
+                github.com/kyobibrynat1
+              </a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label"><img class="contact-icon" src="https://cdn.simpleicons.org/facebook" alt="Facebook"></span>
+            <div class="contact-value">
+              <a class="contact-link" href="https://www.facebook.com/kyob.espinosa/" target="_blank" rel="noopener" aria-label="Facebook profile">
+                <span class="sr-only">Facebook</span>
+                /kyob.espinosa
+              </a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label"><img class="contact-icon" src="https://cdn.simpleicons.org/instagram" alt="Instagram"></span>
+            <div class="contact-value">
+              <a class="contact-link" href="https://www.instagram.com/_icekyob/" target="_blank" rel="noopener" aria-label="Instagram profile">
+                <span class="sr-only">Instagram</span>
+                @_icekyob
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: quick mailto form (no backend) -->
+        <form class="contact-form" id="contact-form" aria-label="Email contact form">
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Subject" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn small">Send Email</button>
+          <!-- <p class="form-note">No backend needed — this opens your email app with the details.</p> -->
+        </form>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
     <p>&copy; 2025 Quinjie Benedict Capayan. All rights reserved.</p>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top" type="button">↑</button>
 
   <!-- Background Effects -->
   <script src="background-effects.js"></script>
@@ -352,6 +430,31 @@
       }).catch(() => { window.location.href = `mailto:${email}`; });
     });
 
+    // Copy email button
+    document.getElementById('copy-email-btn')?.addEventListener('click', function(){
+      const link = document.getElementById('copy-email');
+      const email = link?.dataset.email || link?.textContent?.trim() || '';
+      if(!email) return;
+      navigator.clipboard?.writeText(email).then(() => {
+        const btn = document.getElementById('copy-email-btn');
+        if(btn){
+          const original = btn.textContent;
+          btn.textContent = 'Copied ✓';
+          setTimeout(() => btn.textContent = original, 1200);
+        }
+      });
+    });
+
+    // Contact form → mailto
+    document.getElementById('contact-form')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      const subject = (document.getElementById('subject')?.value || '').trim();
+      const message = (document.getElementById('message')?.value || '').trim();
+      const email = document.getElementById('copy-email')?.dataset.email || 'capayan08@gmail.com';
+      const href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+      window.location.href = href;
+    });
+
     // Scroll reveal
     const reveals = document.querySelectorAll(".reveal");
     function revealOnScroll() {
@@ -363,6 +466,59 @@
     }
     window.addEventListener("scroll", revealOnScroll);
     window.addEventListener("load", revealOnScroll);
+
+    // GitHub contributions count (best-effort)
+    (async function loadContribCount(){
+      try{
+        const username = 'kyobibrynat1';
+        const year = new Date().getFullYear();
+        const res = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=${year}`);
+        if(!res.ok) return;
+        const data = await res.json();
+        const total = data?.total?.[String(year)] ?? data?.years?.find(y=>y.year===year)?.total ?? data?.total ?? null;
+        if(total!=null){
+          const el = document.getElementById('contrib-count');
+          if(el){ el.textContent = `${total} contributions in ${year}`; }
+        }
+      }catch{ /* ignore network errors silently */ }
+    })();
+
+    // One-time typing for hero title
+    (function(){
+      const el = document.querySelector('.typed-once');
+      if(!el) return;
+      const full = el.textContent;
+      el.textContent = '';
+      el.classList.add('typing');
+      let i = 0;
+      const speed = 36;
+      function step(){
+        el.textContent = full.slice(0, i);
+        i++;
+        if(i <= full.length){
+          setTimeout(step, speed);
+        } else {
+          el.classList.remove('typing');
+        }
+      }
+      setTimeout(step, 250);
+    })();
+
+    // Back to Top button logic
+    (function(){
+      const btn = document.getElementById('back-to-top');
+      if(!btn) return;
+      const showAt = 220; // px scrolled
+      function toggle(){
+        if(window.scrollY > showAt) btn.classList.add('show');
+        else btn.classList.remove('show');
+      }
+      window.addEventListener('scroll', toggle);
+      window.addEventListener('load', toggle);
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
   </script>
 </body>
 </html>
