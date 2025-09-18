@@ -2,7 +2,7 @@
 
 A lightweight, static portfolio showcasing projects, skills, and contact info with a glassmorphism UI and subtle canvas background effects.
 
-- Live preview: kyobii-portfolio.vercel.app
+- Live preview: [Portfolio | Quinjie Benedict Capayan](https://kyobii-portfolio.vercel.app/)
 - Tech: HTML, CSS, JavaScript (no build step, no dependencies)
 
 ## Features
