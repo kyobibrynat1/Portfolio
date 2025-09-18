@@ -2,7 +2,7 @@
 
 A lightweight, static portfolio showcasing projects, skills, and contact info with a glassmorphism UI and subtle canvas background effects.
 
-- Live preview: open index.html in a browser
+- Live preview: kyobii-portfolio.vercel.app
 - Tech: HTML, CSS, JavaScript (no build step, no dependencies)
 
 ## Features
@@ -61,5 +61,3 @@ A lightweight, static portfolio showcasing projects, skills, and contact info wi
 - Contribution API is best-effort and may be rate-limited or unavailable
 - Icons from Simple Icons CDN; Java icon from vectorlogo.zone
 
-## License
-No license included. Add a LICENSE file if redistribution is intended.
